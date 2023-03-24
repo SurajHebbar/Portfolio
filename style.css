@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Rubik&family=Source+Code+Pro:ital,wght@0,400;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Source+Code+Pro:ital,wght@0,400;1,300;1,400&display=swap');
 
 *{
@@ -7,27 +8,35 @@
 }
 
 .sidebar{
-    /* background-color: rgb(0, 217, 255); */
-    width: 10vw;
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    background-color: gray;
+    width: 200px;
+    /* font-family: 'Edu NSW ACT Foundation', cursive; */
+    font-family: 'Rubik', sans-serif;
     height: 100vh;
 }
 
 .sidebar nav{
-    padding: 72px;
+    padding: 50px;
     font-size: 20px;
 }
 
 .sidebar nav li{
     list-style: none;
     font-size: 20px;
-    padding : 33px 0;
+    padding : 25px 0;
+
+}
+
+.sidebar nav li a{
+text-decoration: none;
+color:white;
 
 }
 
 .infocontainer{
     display: flex;
-    /* background-color: violet; */
+    padding: 10px;
+    /* background-color: rgb(105, 18, 18); */
     height: 40vh;
     width: 80vw;
     margin: 120px auto;
@@ -52,6 +61,7 @@
 
 .hello{
     font-size: 40px;
+    color: black;
 
 }
 
@@ -59,20 +69,51 @@
 
     font-size: 35px;
     font-weight: bold;
-    font-family: 'Edu NSW ACT Foundation';
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    margin-top: 10px;
+    /* font-family: 'Edu NSW ACT Foundation'; */
 
 }
 
 .about{
+    margin-top: 10px;
 
     font-size: 30px;
+    color: black;
 
+}
+.buttons{
+    margin-top: 30px;
+
+    
+   
 }
 
 .buttons button{
+    
+    padding: 9px 14px;
+    background-color: gray;
+    color :white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0px 9px;
+    cursor: pointer;
+    
 
+}
+
+.buttons button:hover{
+    
+    background-color:white;
+    color :gray;
 }
 
 .devpic img{
     width: 40vh;
+}
+
+.contactform{
+    
 }
