@@ -23,7 +23,7 @@ function startWebcam() {
 }
 
 function getLabeledFaceDescriptions() {
-  const labels = ["Felipe", "Messi", "Data"];
+  const labels = ["Suraj", "Messi", "Data","Lee","Oshima","Li","Daniel","Tyki","Alex"];
   return Promise.all(
     labels.map(async (label) => {
       const descriptions = [];
@@ -70,8 +70,9 @@ async function faceRecognition() {
       results.forEach((result, i) => {
         const box = resizedDetections[i].detection.box;
         const drawBox = new faceapi.draw.DrawBox(box, {
-          label: result,
+          label: result.label,
         });
+        // console.log(result.lab)
         drawBox.draw(canvas);
       });
     }, 100);
